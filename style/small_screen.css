@@ -1,0 +1,15 @@
+/* For Small Screens ---------------------------------------------- */
+@media screen and (max-width: 1024px) {
+    body {
+        width: 100% !important;
+    }
+
+    nav {
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+
+    nav a {
+        float: none !important;
+    }
+}
