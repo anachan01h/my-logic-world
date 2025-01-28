@@ -4,7 +4,10 @@ TEMP_FILES := $(patsubst posts/%.org, .site/temp_posts/%.html, $(ORG_FILES))
 POSTS := $(patsubst posts/%.org, .site/posts/%.html, $(ORG_FILES))
 TEMPLATES := $(wildcard templates/*.html)
 
-all: .site/style.css $(POSTS)
+all: .site/style.css .site/index.html
+
+.site/index.html: scripts/index_gen.jl $(POSTS) $(TEMPLATES)
+	julia scripts/index_gen.jl
 
 .site/posts/%.html: .site/temp_posts/%.html scripts/posts_gen.jl $(TEMPLATES) | .site/posts/
 	julia scripts/posts_gen.jl $*

@@ -17,9 +17,13 @@ title, author, date = open("./posts/$filename.org") do stream
     date = match(r"#\+DATE: (.*)\n", text);
     date = date.captures[1];
     date = Date(date, dateformat"y-m-d");
-    date = Dates.format(date, "dd-mm-yyyy");
+    date = Dates.format(date, "dd/mm/yyyy");
 
     title, author, date
+end
+
+open("./.site/index.csv", "a") do stream
+    write(stream, "$filename.html\t\"$title\"\t$date\t\"$author\"\n");
 end
 
 post = open("./templates/post_template.html") do stream
