@@ -1,5 +1,7 @@
 (require 'org)
 
+(setq org-export-with-toc nil)
+
 (setq org-publish-project-alist
 	  '(
 		("org-posts"

@@ -24,7 +24,7 @@ end
 
 template = replace(template, "%PAGE_TITLE%" => "Meu Mundo de Lógica");
 template = replace(template, "%CSS_FILE%" => "./style.css");
-template = replace(template, "%INDEX_LINK%" => "./index.html");
+template = replace(template, "%INDEX_LINK%" => "./");
 template = replace(template, "%POSTS%" => content);
 
 open("./.site/index.html", "w") do stream

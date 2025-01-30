@@ -3,7 +3,7 @@ body {
     width: 1024px;
     margin: auto;
     background-color: #2222A1;
-    background-image: url("../img/fundo-blog.png");
+    background-image: url("./img/fundo-blog.png");
     background-size: 50px;
     animation: teste 50s linear infinite;
 }
