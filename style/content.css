@@ -9,6 +9,7 @@ main article {
     margin-bottom: 15px;
     background-color: rgba(0, 0, 0, 0.4);
     color: #FFF;
+	text-align: justify;
 }
 
 main a {
@@ -32,4 +33,8 @@ main h2, main h3, main h4 {
 
 main h4 {
 	font-size: 11pt;
+}
+
+main p {
+	text-indent: 30px;
 }

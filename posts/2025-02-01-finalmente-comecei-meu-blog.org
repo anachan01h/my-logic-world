@@ -1,0 +1,9 @@
+#+TITLE: Finalmente, comecei meu blog...
+#+AUTHOR: Ana-chan
+#+DATE: 2025-02-01
+
+Já fazem alguns anos que tive a ideia de fazer um blog para falar sobre Lógica, mas a correria da pós-graduação e meu perfeccionismo acabaram me fazendo adiar esse projeto por muito tempo.
+
+Aproveitei meu período de férias atual para colocar esse projeto no ar. Fiz um design em HTML e CSS, criei um gerador de site estático usando Julia e Emacs Lisp, e coloquei o blog no ar. Como já uso o Emacs, acabei optando por escrever os posts usando org-mode ao invés de Markdown.
+
+Não sei com qual frequência irei postar aqui no blog, mas vou tentar escrever sobre assuntos legais que tenho estudado, ou outras ideias e reflexões que tive relacionadas aos meus estudos.
